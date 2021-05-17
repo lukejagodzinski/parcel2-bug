@@ -1,0 +1,30 @@
+{
+  "name": "parcel2-bug",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@loadable/component": "^5.15.0",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/styles": "^4.11.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-graphql": "2.0.0-nightly.671",
+    "@parcel/transformer-sass": "2.0.0-nightly.671",
+    "@parcel/transformer-typescript-tsc": "^2.0.0-nightly.671",
+    "@types/loadable__component": "^5.13.3",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.5",
+    "@types/react-router": "^5.1.14",
+    "@types/react-router-dom": "^5.1.7",
+    "parcel": "2.0.0-nightly.671",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html --detailed-report --cache-dir .cache --no-cache",
+    "start": "yarn build; npx http-serve -p 3000 ./dist/"
+  }
+}
